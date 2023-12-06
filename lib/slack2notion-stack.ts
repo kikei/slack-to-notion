@@ -31,7 +31,7 @@ export class Slack2NotionStack extends cdk.Stack {
         sourceMap: false,
         sourcesContent: false,
         externalModules: ['@aws-sdk/*'],
-        preCompilation: true,
+        preCompilation: false,
       },
       logRetention: logs.RetentionDays.ONE_DAY,
       environment: env.clean()
@@ -50,7 +50,7 @@ export class Slack2NotionStack extends cdk.Stack {
         sourceMap: false,
         sourcesContent: false,
         externalModules: ['*'],
-        preCompilation: true,
+        preCompilation: false,
       },
       logRetention: logs.RetentionDays.ONE_DAY,
       environment: {
