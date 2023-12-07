@@ -5,7 +5,7 @@ export function truncate(text: string, length: number): string {
 }
 
 export function headerLines(text: string, lines: number = 1): string {
-  return text.split('\n').slice(0, lines).join();
+  return text.split('\n').slice(0, lines).join('');
 }
 
 export function toText({header, trim}: {
